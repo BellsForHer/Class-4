@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    #btn-test {
+        position: absolute; 
+        border: none;
+        top: 30px;
+        left: 35%;
+        width: 30%;
+        text-align: center;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10%;
+        background-color: aquamarine;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+    }
+    
+  
+    </style>
+</head>
+<body>
+    <div class="background-rgb-change">
+
+        <button id="btn-test" onclick="colorChange()">Click Me!</button>
+
+
+    </div>
+    
+    <script>
+     
+    //  let backgroundElem = document.getElementsByClassName('background-rgb-change');
+
+    let buttonElem = document.getElementById('btn-test');
+
+    function colorChange () {
+        buttonElem.style.backgroundColor = '#98002E';
+        buttonElem.style.color = '#ffffff';
+    }
+
+    buttonElem.addEventListener('click', colorChange);
+
+
+
+
+    </script>
+
+
+</body>
+</html>
