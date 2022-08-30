@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div class="background-rgb-change">
+    <div class="background-change">
 
         <button id="btn-test" onclick="colorChange()">Click Me!</button>
 
@@ -33,23 +33,22 @@
     </div>
     
     <script>
-     
-    //  let backgroundElem = document.getElementsByClassName('background-rgb-change');
-
-    let buttonElem = document.getElementById('btn-test');
-
-    function colorChange () {
-        buttonElem.style.backgroundColor = '#98002E';
-        buttonElem.style.color = '#ffffff';
-    }
-
-    buttonElem.addEventListener('click', colorChange);
 
 
+let backgroundElem = document.getElementById('btn-test');
+let backgroundChange = document.body.style.backgroundColor; 
+
+function colorChange () {
+    const colors = ['red', 'green', 'blue'];
+     return Math.random(backgroundChange) * colors.length; 
+}
+
+backgroundElem.addEventListener('click', colorChange);
 
 
-    </script>
 
+</script>
 
 </body>
 </html>
+
