@@ -1,10 +1,11 @@
-countTrue([true, false, false, true, false]) 
+const countTrue1 = [true, false, false, true, false];
+const lengthArr = countTrue1.filter(value => value === true).length;
+console.log(lengthArr);
 
-countTrue([false, false, false, false]) 
+const countTrue2 = [false, false, false, false];
+const lengthArr2 = countTrue2.filter(value => value === true).length;
+console.log(lengthArr2);
 
-countTrue([]) 
-
-function countTrue (group) {
-    for(let i=0; i < group.length; i++) 
-    
-}
+const countTrue3 = [];
+let length = countTrue3.length;
+console.log(length);
