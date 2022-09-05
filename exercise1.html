@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Change Background Color</title>
     <style> 
     #btn-test {
         position: absolute; 
@@ -25,25 +25,18 @@
     </style>
 </head>
 <body>
-    <div class="background-change">
 
         <button id="btn-test" onclick="colorChange()">Click Me!</button>
-
-
-    </div>
     
     <script>
 
-
-let backgroundElem = document.getElementById('btn-test');
-let backgroundChange = document.body.style.backgroundColor; 
-
 function colorChange () {
-    const colors = ['red', 'green', 'blue'];
-     return Math.random(backgroundChange) * colors.length; 
+        const colors = ['red', 'green', 'blue', 'pink', 'purple', 'orange'];
+         document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
 }
 
-backgroundElem.addEventListener('click', colorChange);
+
 
 
 
